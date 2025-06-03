@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Kugile';
+    src: url('extra/fonts/Kugile.ttf') format('truetype');
+    font-display: swap;
+}
+
+header {
+    margin: 0px;
+    padding: 0 20px;
+    background-color: white;
+}
+
+body {
+    margin: 0; /* Add this to reset default body margin */
+    background-color: black;
+}
+.name {
+    padding: 0;
+}
+
+.name .firstName {
+    font-size: 27vh;
+    font-family: 'Kugile';
+
+    margin: 0;
+}
+
+.name .lastName {
+    font-size: 27vh;
+    margin-top: -9rem;
+    padding: 0;
+}
+
+.p1, .p2 {
+    color: white;
+    font-size: 1.5em;
+    text-align: justify;
+
+    display: flex; /* Makes the children (paragraphs) flex items */
+    justify-content: space-between; /* Pushes items to the ends with space in between */
+    align-items: flex-start; /* Aligns items to the top if they have different heights */
+    width: 80%; /* Or any desired width for your layout */
+    max-width: 500px; /* Optional: Sets a maximum width */
+    margin: 0px auto; /* Centers the container on the page and adds vertical spacing */
+    padding: 0px;
+}
